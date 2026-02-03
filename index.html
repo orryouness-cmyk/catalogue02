@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Brehm Stock">
+    <meta name="theme-color" content="#f59e0b">
+    
+    <link rel="manifest" href="./assets/manifest-BMSxGWyN.json">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3251/3251560.png">
+    
+    <title>Brehm Stock | Gestion de Pesage Professionnelle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        :root {
+            --safe-area-inset-top: env(safe-area-inset-top);
+            --safe-area-inset-bottom: env(safe-area-inset-bottom);
+        }
+        
+        body { 
+          font-family: 'Inter', sans-serif; 
+          -webkit-tap-highlight-color: transparent;
+          background-color: #f8fafc;
+          margin: 0;
+          padding: 0;
+          height: 100vh;
+          overflow: hidden; 
+        }
+        
+        #root { 
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        
+        .safe-top { padding-top: var(--safe-area-inset-top); }
+        
+        .safe-bottom { padding-bottom: var(--safe-area-inset-bottom); }
+        
+        .page-transition {
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        button:active { transform: scale(0.96); transition: transform 0.1s; }
+        
+        input, select { font-size: 16px !important; }
+        
+        /* Prevents iOS auto-zoom on focus */
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "xlsx": "https://esm.sh/xlsx@0.18.5",
+    "exceljs": "https://esm.sh/exceljs@4.4.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-BNl-DK8g.js"></script>
+</head>
+<body class="overflow-hidden">
+    <div id="root"></div>
+</body>
+</html>
